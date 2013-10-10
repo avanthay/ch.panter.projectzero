@@ -8,12 +8,12 @@
 
 	<name>Panter :: Maven Kickstart</name>
 	<description><![CDATA[Maven Kickstart]]></description>
-  <version>1.0.0</version>
+	<version>1.0.0</version>
 
-  <scm>
-     <connection>scm:git:git://github.com/panter/ch.panter.projectzero.git</connection>
-     <url>scm:git:git://github.com/panter/ch.panter.projectzero.git</url>
-  </scm>
+	<scm>
+		<connection>scm:git:git://github.com/avanthay/ch.panter.projectzero.git</connection>
+		<url>scm:git:git://github.com/avanthay/ch.panter.projectzero.git</url>
+	</scm>
 
 	<organization>
 		<name>Panter llc</name>
@@ -81,12 +81,19 @@
 
 		<!-- Test Dependencies -->
 
-    <dependency>
-      <groupId>org.jmock</groupId>
-      <artifactId>jmock-junit4</artifactId>
-      <version>2.5.1</version>
-      <scope>test</scope>
-    </dependency>
+		<dependency>
+			<groupId>org.jmock</groupId>
+			<artifactId>jmock-junit4</artifactId>
+			<version>2.5.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.9.5</version>
+			<scope>test</scope>
+		</dependency>
 
 	</dependencies>
 
@@ -96,11 +103,11 @@
 			<plugin>
 				<inherited>true</inherited>
 				<artifactId>maven-compiler-plugin</artifactId>
-        <version>2.3.2</version>
+				<version>2.3.2</version>
 				<configuration>
 					<source>1.6</source>
 					<target>1.6</target>
-          <encoding>UTF-8</encoding>
+					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
 		</plugins>
